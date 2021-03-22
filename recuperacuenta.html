@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recover your account</title>
+    <link rel="stylesheet" href="assets/recuperacuenta.css">
+  </head>
+  <body>
+    <h1 id="message"style="text-align:Center;font-family:Century Gothic;color:#fff;">Recupera tu cuenta</h1>
+    <div class="recover-your-account">
+      <label id="pass"for="username">Ingresa el ultimo password del que te acuerdes</label>
+      <input style="height:30px;width:200px;" type="password">
+      <label id="email"for="username">Usuario o Correo electronico </label>
+      <input style="height:30px;width:200px;" type="text">
+
+       <input type="submit" onclick='innermessage()'placeholder="Send">
+    </div>
+    <h1 id="kkk"style="text-align:center;">Listo para vivir la experiencia<b> Gaming?.</b></h1>
+
+    <script>
+      //Script para no adjuntar archivos JS
+     let boton = document.getElementById("boton");
+     let submi =  document.getElementById("message");
+      //Funciones principales
+   function innermessage(){
+    document.getElementById("message").innerHTML = "Te enviamos un email para recuperar tu cuenta <br> Revisalo!!";
+   }
+    </script>
+
+  </body>
+</html>

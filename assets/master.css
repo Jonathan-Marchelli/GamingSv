@@ -1,0 +1,65 @@
+body{
+  margin:0;
+  padding:0;
+  background-size:cover;
+  background-color:gray;
+  background-size: cover;
+  font-family: Century Gothic;
+  height:100vh;
+}
+.logoLg{
+width: 420px;
+height: 420px;
+background: #000;
+color: #fff;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+box-sizing: border-box;
+padding: 70px 70px;
+}
+.logoLg .Logo{
+  position: absolute;
+  top: -190px;
+  left: 40px;
+}
+.logoLg h1{
+ margin:20;
+ padding: 0 0 0px;
+ font-size:39px;
+}
+.logoLg input[type="text"]
+.logoLg input[type="password"]{
+   border:none;
+   border-bottom: 1px solid #fff;
+   background:transparent;
+   outline:none;
+   height:50px;
+   color:#fff;
+   font-size: 50px;
+}
+.logoLg input[type="submit"]{
+  border:none;
+  margin-top:15px;
+  width:250px;
+  height:35px;
+  border-radius:18%;
+  background-color:#556B2F;
+  color: #fff;
+  font-size: 18px;
+}
+.logoLg a {
+   text-decoration:none;
+   font-size: 18px;
+   color: darkgrey;
+   line-height: 30px;
+}
+.logoLg  a:hover{
+  color:#fff;
+}
+.logoLg a[type="text"]{
+  color:#00ff00;
+  height:20px;
+  width: 20px;
+}

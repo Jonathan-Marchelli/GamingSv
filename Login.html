@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Binary Login</title>
+    <link rel="stylesheet" href="assets/master.css">
+
+  </head>
+  <body onload="clickBoton();">
+    <div class="logoLg">
+      <img style="height:350px; width:350px;"class='Logo' src="assets/logo3.png">
+      <h1>Login Here</h1>
+      <form>
+
+        <label for="username">Username</label>
+        <input id="userlog" type="text" placeholder="Enter your Username">
+
+        <label for="password">Password:</label>
+        <input id="contra" type="password" placeholder="Enter your Password">
+
+
+        <input id="label" type="submit" value="Login">
+
+        <a href="#" onclick="recuperaCuenta();">Lost your password?</a><br>
+        <a href="#" onclick="creaCuenta();">Don't have an account?</a>
+
+        <a type="text">Creado por Gaming Sv </a>
+      </form>
+
+    </div>
+    <script>
+     //Insertando script para no adjuntar archivos js
+    let user = document.getElementById('userlog');
+    let contra = document.getElementById('userlog')
+    let lost = document.getElementById('lost')
+
+    //Funciones para redirigir
+      function clickBoton(){
+        let label = document.getElementById('label')
+        label.addEventListener("mousedown", cambiaPagina,false);
+        lost.addEventListener("mousedown",recuperaCuenta,false);
+      }
+      function cambiaPagina(e){
+        let url = 'cybershark2.html';
+        location.href = (url);
+      }
+      function recuperaCuenta(){
+        let url= 'recuperacuenta.html';
+        location.href = (url);
+      }
+      function creaCuenta(){
+        let url= 'creacuenta.html';
+        location.href = (url);
+      }
+
+    </script>
+
+
+  </body>
+</html>
