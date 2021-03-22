@@ -3,55 +3,54 @@
   <head>
     <title>Gaming SV - Iniciar sesion</title>
     <link rel="stylesheet" href="assets/master.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body onload="clickBoton();">
+  <body>
+    <nav>
+      <div style="display: inline-block; margin-left: 20%;">
+        <h1>Gaming Sv</h1>
+      </div>
+      <div  style="display: inline-block; margin-left: 50%;">
+        <h1 class="hide">Gaming Sv</h1>
+      </div>
+    </nav>	
+    
+    
     <div class="logoLg">
       <img style="height:350px; width:350px;"class='Logo' src="assets/logo3.png">
-      <h1>Inicia sesion</h1>
+      <h1>Inicia sesión</h1>
       <form>
 
         <label for="username">Usuario</label>
         <input id="userlog" type="text" placeholder="Su nombre de usuario">
 
         <label for="password">Contraseña</label>
-        <input id="contra" type="password" placeholder="Su contraseña">
+        <input id="contra" type="password" placeholder="Su contraseña" required>
 
 
         <input id="label" type="submit" value="Login">
 
-        <a href="#recuperacuenta.html" onclick="recuperaCuenta();">Olvidaste tu contraseña?</a><br>
-        <a href="#creacuenta.html" onclick="creaCuenta();">Crea tu cuenta</a><br>
+        <a onclick="page(1);" class="text">Olvidaste tu contraseña?</a><br>
+        <a  onclick="page(2);" class="text">Crea tu cuenta</a><br>
 
         <a type="text">Creado por Gaming Sv </a>
       </form>
 
     </div>
     <script>
-     //Insertando script para no adjuntar archivos js
-    let user = document.getElementById('userlog');
-    let contra = document.getElementById('userlog')
-    let lost = document.getElementById('lost')
-
-    //Funciones para redirigir
-      function clickBoton(){
-        let label = document.getElementById('label')
-        label.addEventListener("mousedown", cambiaPagina,false);
-        lost.addEventListener("mousedown",recuperaCuenta,false);
-      }
-      function cambiaPagina(e){
-        let url = 'cybershark2.html';
-        location.href = (url);
-      }
-      function recuperaCuenta(){
-        let url= 'recuperacuenta.html';
-        location.href = (url);
-      }
-      function creaCuenta(){
-        let url= 'creacuenta.html';
-        location.href = (url);
-      }
-
+  function page(page){
+        switch (page) {
+        case 1:
+          //Redirigir recuperar contra
+          location.href = 'recuperacuenta.html';
+          break;
+        case 2:
+          //Redirigir Crear cuenta
+          location.href = 'creacuenta.html';
+          break;
+        }
+    }
     </script>
 
 
