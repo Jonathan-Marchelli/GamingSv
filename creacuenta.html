@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Create your account</title>
+    <title>Gaming SV - Crear cuenta</title>
     <link rel="stylesheet" href="assets/creacuenta.css">
   </head>
   <body>
-    <h1 id="message"style="text-align:Center;font-family:Century Gothic;color:#fff;">Create your account</h1>
+    <h1 id="message"style="text-align:Center;font-family:Century Gothic;color:#fff;">Crea tu cuenta</h1>
     <div class="recover-your-account">
         <label for="username">Tu primer nombre</label>
         <input style="height:30px;width:200px;" type="text">
@@ -15,8 +15,7 @@
         <label for="username">Correo Electronico</label>
         <input style="height:30px;width:200px;" type="text">
 
-        <input type="submit" onclick="innermessage()">
-        <button type="button" onclick="botonAparece();">Iniciar sesion</button>
+        <button class="btn-crear-cuenta"onclick="innermessage()"> <a href="#" > Enviar</a></button>
     </div>
     
     <script>
@@ -29,7 +28,7 @@
         location.href = (url);
       }
      function innermessage(){
-      submi.innerHTML = "Welcome to CyberShark Family <br>Lets get started!<br>Login to see our plans";
+      submi.innerHTML = "Bienvenido a la familia de GamingSV!<br> Inicia sesion para ver todos nuestros productos";
      }
 
     </script>
