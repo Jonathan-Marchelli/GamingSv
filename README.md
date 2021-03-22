@@ -1,3 +1,3 @@
 # 🎮 GamingSv 🎮
-Proyecto de final de modulo de 1er año de bachillerato en Desarrollo de Software.
+Proyecto de final de modulo de 1er año de bachillerato en Desarrollo de Software. <br>
 Profesor: Jhansi Aguilar
