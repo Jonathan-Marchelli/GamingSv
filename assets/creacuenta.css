@@ -13,7 +13,7 @@ padding: 70px 70px;
 margin:20px;
 }
 body{
-  background-color:gray;
+  background-color:#fff;
 }
 .btn-crear-cuenta{
   border-radius:50px;
@@ -31,4 +31,7 @@ body{
 button a {
   text-decoration: none;
   color: #fff;
+}
+nav{
+  background-color:gray;
 }
