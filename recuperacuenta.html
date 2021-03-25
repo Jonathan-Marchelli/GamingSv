@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Recover your account</title>
+    <title>Recupera tu cuenta - GamingSV</title>
     <link rel="stylesheet" href="assets/recuperacuenta.css">
   </head>
   <body>
@@ -19,14 +19,29 @@
     </div>
     <h1 id="kkk"style="text-align:center;">Listo para vivir la experiencia<b> Gaming?.</b></h1>
 
-    <script>
-      //Script para no adjuntar archivos JS
-     let boton = document.getElementById("boton");
-     let submi =  document.getElementById("message");
+      <script>
+      //Insertando script para no adjuntar archivos js
+
+      let submi =  document.getElementById("message");
+      let nav = document.getElementById("nav");
       //Funciones principales
-   function innermessage(){
-    document.getElementById("message").innerHTML = "Te enviamos un email para recuperar tu cuenta <br> Revisalo!!";
-   }
+     function innermessage(){
+      if ($(".inputs").val() == '') {
+        nav.style.backgroundColor = "red";
+        submi.innerHTML = "OOPS... <br>Parece que hay un campo sin informacion, rellena todos para poder entrar al mejor mundo de gaming en El Salvador!";
+        //Solo con fines esteticos de la consola jaja
+        console.error("Failed to fetch url server responded with a 500 status:: Solo para hacerlo ver como que si hay un server y DB XD")
+      }
+      else {
+        nav.style.backgroundColor = "green";
+        submi.innerHTML = "Bienvenido a la familia de GamingSV!<br> Inicia sesion para ver todos nuestros productos";
+
+      }
+
+
+     }
+
+    </script>
     </script>
 
   </body>

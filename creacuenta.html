@@ -2,36 +2,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <title>Gaming SV - Crear cuenta</title>
     <link rel="stylesheet" href="assets/creacuenta.css">
   </head>
   <body>
-    <nav>
-      <h1 id="message"style="text-align:Center;font-family:Century Gothic;color:#fff;">Crea tu cuenta</h1>
+    <nav id="nav" class="nav">
+      <h1 class="title"id="message">Crea tu cuenta y aventurate en el mejor mundo de gaming de El Salvador!.</h1>
     </nav>
+      <div class="container">
+        <div class="recover-your-account">
+            <label for="name">Tu primer nombre</label><br>
+            <input id="input"class="inputs" type="text"> <br>
+            <label for="username">Nombre de usuario</label><br>
+            <input   class="inputs" type="text"><br>
+            <label for="username">Contrasena</label><br>
+            <input  class="inputs" type="password" required><br>
 
-    <div class="recover-your-account">
-        <label for="username">Tu primer nombre</label>
-        <input style="height:30px;width:200px;" type="text">
-        <label for="username">Nombre de usuario</label>
-        <input style="height:30px;width:200px;" type="text">
-        <label for="username">Correo Electronico</label>
-        <input style="height:30px;width:200px;" type="text">
+            <button class="btn" onclick="innermessage()">Enviar</button>
+        </div>
+      </div>  
 
-        <button class="btn-crear-cuenta"onclick="innermessage()"> <a href="#" > Enviar</a></button>
-    </div>
+      <!--jquery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <script>
       //Insertando script para no adjuntar archivos js
-      let boton = document.getElementById("boton");
+
       let submi =  document.getElementById("message");
+      let nav = document.getElementById("nav");
       //Funciones principales
-      function botonAparece(){
-        let url = 'Login.html';
-        location.href = (url);
-      }
      function innermessage(){
-      submi.innerHTML = "Bienvenido a la familia de GamingSV!<br> Inicia sesion para ver todos nuestros productos";
+      if ($(".inputs").val() == '') {
+        nav.style.backgroundColor = "red";
+        submi.innerHTML = "OOPS... <br>Parece que hay un campo sin informacion, rellena todos para poder entrar al mejor mundo de gaming en El Salvador!";
+        //Solo con fines esteticos de la consola jaja
+        console.error("Failed to fetch url server responded with a 500 status:: Solo para hacerlo ver como que si hay un server y DB XD")
+      }
+      else {
+        nav.style.backgroundColor = "green";
+        submi.innerHTML = "Bienvenido a la familia de GamingSV!<br> Inicia sesion para ver todos nuestros productos";
+
+      }
+
+
      }
 
     </script>
