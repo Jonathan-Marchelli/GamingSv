@@ -84,13 +84,13 @@ nav{
     display: none;
 }
   .logoLg{
-    margin-top: 10%;
+    margin-top: 20%;
   }
  
 }   
   @media only screen and (max-width: 500px) {
   .logoLg{
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
   .hide{
@@ -108,7 +108,7 @@ nav{
       
   }
     .logoLg{
-      margin-top: 50%;
+      margin-top: 70%;
       width: 360px;
       height: 500px;
       margin-left: 5px;
