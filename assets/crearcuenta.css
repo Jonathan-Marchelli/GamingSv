@@ -2,7 +2,7 @@
     font-family: 'Poppins';
   }
   .nav{
-      background-color: gray;
+      background-color: #ff8000;
       margin: 0 0;
       height: 120px;
   }
@@ -43,6 +43,23 @@
     color: #fff;
   
   }
+  .footer{
+    background-color: gray;
+    margin: 0 0;
+    height: 80px;
+    color: #fff;
+    text-align: center;
+  }
+  .footer-link{
+      text-decoration: none;
+      color: #fff;
+  }
+  .footer-link:hover{
+    text-decoration: none;
+    color: #ff8000;
+}
+
+
   @media only screen and (max-width: 1100px) {
     .nav{
         font-size: 15px;

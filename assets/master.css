@@ -4,8 +4,10 @@ body{
   background-size:cover;
   background-color:#fff;
   background-size: cover;
-  font-family: 'Poppins', sans-serif;;
-  height:100vh;
+
+}
+*{
+  font-family: 'Poppins';
 }
 a {
   cursor: pointer;
@@ -69,7 +71,7 @@ margin-top: 5%;
 }
 
 nav{
-  background-color: gray;
+  background-color: #ff8000;
   color: #fff;
 }
 
@@ -90,7 +92,7 @@ nav{
 }   
   @media only screen and (max-width: 500px) {
   .logoLg{
-    margin-top: 30%;
+    margin-top: 20%;
   }
 
   .hide{
