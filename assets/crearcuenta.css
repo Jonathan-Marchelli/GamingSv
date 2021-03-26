@@ -30,15 +30,28 @@
     margin: 10% auto;
   }
   .btn{
-    margin-left: 50px;
-    padding: 10px 30px;
     margin-top: 30px;
-    border-radius: 50px;
-    background-color: #ff8000;
-    text-decoration: none !important;
+    margin-left: 20px;
+    outline-style: solid coral;
+    outline-color: coral;
+  background-color: coral;
     color: #fff;
+    cursor:pointer;
+    list-style: none;
+    padding: 10px;
+
+  
   
   }
+  .btn:hover{
+
+    background-color: #3E5A66;
+    outline-style: solid #3E5A66;
+    outline-color: #3E5A66;
+  background-color: #3E5A66;
+    
+    
+    }
   .btn-inicia{
     margin-left: 50px;
     display: none;
