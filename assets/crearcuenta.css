@@ -1,23 +1,30 @@
 *{
     font-family: 'Poppins';
+    color: #fff;
+  }
+  body{
+    background-color:#3E5A66;
+  }
+  .inputs{
+    color: #000;
   }
   .nav{
-      background-color: #ff8000;
+      background-color: #D2A456;
       margin: 0 0;
       height: 120px;
+      text-align: center;
   }
   .title{
-    margin: 0 0;
-    color: #fff;
-    text-align: center;
+    margin: 0 auto;
   }
   .container{
     display: flex;
     align-items: center;
   }
+
   .recover-your-account{
     align-items: center;
-    background-color: #000;
+    background-color: #A0BEDA;
     color: #fff;
     padding: 20px 40px;
     margin: 10% auto;
@@ -43,16 +50,19 @@
     color: #fff;
   
   }
+  .container-phrase{
+    text-align: center;
+  }
   .footer{
-    background-color: gray;
     margin: 0 0;
     height: 80px;
     color: #fff;
     text-align: center;
+
   }
   .footer-link{
       text-decoration: none;
-      color: #fff;
+      color: orange;
   }
   .footer-link:hover{
     text-decoration: none;
@@ -83,6 +93,13 @@
         *{
             font-size: 50px  !important;
           }
+          .footer{
+            margin: 0 0;
+            height: 80px;
+            color: #000;
+            text-align: center;
+            margin-top:30% ;
+          }
 
         
   
@@ -95,16 +112,8 @@
         text-align: center;
         
     }
-      .logoLg{
-        margin-top: 70%;
-        width: 360px;
-        height: 500px;
-        margin-left: 5px;
-  
-      }
-      .hide{
-        display: none;
-    }
+
+
         
     
       }

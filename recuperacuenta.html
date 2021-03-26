@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Recupera tu cuenta - GamingSV</title>
-    <link rel="stylesheet" href="assets/recuperacuenta.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <title>Gaming SV - Crear cuenta</title>
+    <link rel="stylesheet" href="assets/crearcuenta.css">
   </head>
   <body>
-    <h1 id="message" class="recupera-message">Olvidaste la clave de acceso al portal de los gamers? Recupera tu cuenta!</h1>
-    <div class="recover-your-account">
-      <label for="password"><h4>Ingresa la ultima contraseña que recuerdes</h4></label><br>
-      <input  type="password"><br>
-      <label for="username"><h4>Usuario o correo electronico</h4></label><br>
-      <input  type="text"><br>
+    <nav id="nav" class="nav">
+      <h1 class="title"id="message">Perdiste la clave de acceso al portal de gamer?<br>
+        Recuperá tu cuenta y regresá a disfrutar de los mejores productos y precios!.</h1>
+    </nav>
+    <div class="container">
+        <div class="recover-your-account">
+            <label for="username">Nombre de usuario</label><br>
+            <input   class="inputs input2" type="text"><br>
+            <label for="username">La contraseña que recuerdes</label><br>
+            <input  class="inputs input3" type="password" required><br>
 
-       <button class="btn">Enviar</button>
-    </div>
-    <footer>
-      <h1 class="phrase">Listo para vivir la experiencia<b> Gaming?.</b></h1>
+            <button class="btn" id="btn"onclick="innermessage()">Enviar</button>
+        </div>
+    </div>  
+    <footer class="footer">
+        Copyright©, <a class="footer-link"href="index.html">Gaming SV 2021</a> || TODOS LOS DERECHOS RESERVADOS 
     </footer>
-   
 
-      <script>
+      <!--jquery-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
       //Insertando script para no adjuntar archivos js
-
+      let btn = document.getElementById("btn");
       let submi =  document.getElementById("message");
       let nav = document.getElementById("nav");
+      let inicia = document.getElementById("inicia");
       //Funciones principales
+
      function innermessage(){
-      if ($(".inputs").val() == '') {
+
+      if ($(".input1").val() == '' || $(".input2").val() == ''||  $(".input3").val() == '') {
         nav.style.backgroundColor = "red";
         submi.innerHTML = "OOPS... <br>Parece que hay un campo sin informacion, rellena todos para poder entrar al mejor mundo de gaming en El Salvador!";
         //Solo con fines esteticos de la consola jaja
         console.error("Failed to fetch url server responded with a 500 status:: Solo para hacerlo ver como que si hay un server y DB XD")
       }
       else {
+        btn.style.display = "none";
         nav.style.backgroundColor = "green";
-        submi.innerHTML = "Bienvenido a la familia de GamingSV!<br> Inicia sesion para ver todos nuestros productos";
+        submi.innerHTML = "Te hemos enviado un mensaje a tu correo<br>Rellená los datos y recuperá tu cuenta! ";
 
       }
 
@@ -45,7 +56,5 @@
      }
 
     </script>
-    </script>
-
   </body>
 </html>
