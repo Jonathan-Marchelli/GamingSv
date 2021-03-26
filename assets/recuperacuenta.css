@@ -12,7 +12,7 @@ body::selection{
   color: #000;
 }
 .nav{
-    background-color: #D2A456;
+    background-color: coral;
     margin: 0 0;
     height: 120px;
     text-align: center;

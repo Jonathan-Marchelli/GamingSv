@@ -18,7 +18,7 @@
               <input   class="inputs input2" type="text"><br>
               <label for="username">Tu contraseña </label><br>
               <input  class="inputs input3" type="password" required><br>
-              <button class="btn" id="btn"onclick="innermessage()">Enviar</button><br>
+              <button class="btn" id="btn"onclick="innermessage()">Iniciar sesion</button><br>
               <div class="text-small-container">
                 <a onclick="page(1);" class="text">Olvidaste tu contraseña?</a><br>
                 <a  onclick="page(2);" class="text">Crea tu cuenta</a><br>
@@ -58,21 +58,8 @@
               }
           }
 
-     function innermessage(){
-
-      if ($(".input1").val() == '' || $(".input2").val() == ''||  $(".input3").val() == '') {
-        nav.style.backgroundColor = "red";
-        submi.innerHTML = "OOPS... <br>Parece que hay un campo sin informacion, rellena todos para poder entrar al mejor mundo de gaming en El Salvador!";
-        //Solo con fines esteticos de la consola jaja
-        console.error("Failed to fetch url server responded with a 500 status:: Solo para hacerlo ver como que si hay un server y DB XD")
-      }
-      else {
-        btn.style.display = "none";
-        nav.style.backgroundColor = "green";
-        submi.innerHTML = "Te hemos enviado un mensaje a tu correo<br>Rellená los datos y recuperá tu cuenta! ";
-
-      }
-
+     function innermessage(){ 
+      window.location.replace("http://www.w3schools.com");
 
      }
 
