@@ -80,8 +80,9 @@ body{
   color: #000;
 }
 .text-small-container{
-
-  margin-left: 55%;
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 19%;
 }
 .footer{
   margin: 0 0;
