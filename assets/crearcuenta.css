@@ -47,19 +47,26 @@
     .nav{
         font-size: 15px;
         text-align: center;
-        height: 200px;
+        height: 250px;
         
     }
-    .hide{
-      display: none;
-  }
-    .logoLg{
-      margin-top: 20%;
-    }
+    *{
+        font-size: 40px;
+      }
+
    
   }   
     @media only screen and (max-width: 500px) {
-  
+        .nav{
+            font-size: 15px;
+            text-align: center;
+            height: 300px;
+            
+        }
+        *{
+            font-size: 50px  !important;
+          }
+
         
   
     }
