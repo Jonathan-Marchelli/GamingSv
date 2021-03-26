@@ -1,0 +1,86 @@
+*{
+    font-family: 'Poppins';
+  }
+  .nav{
+      background-color: gray;
+      margin: 0 0;
+      height: 120px;
+  }
+  .title{
+    margin: 0 0;
+    color: #fff;
+    text-align: center;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+  }
+  .recover-your-account{
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    margin: 10% auto;
+  }
+  .btn{
+    margin-left: 50px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #ff8000;
+    text-decoration: none !important;
+    color: #fff;
+  
+  }
+  .btn-inicia{
+    margin-left: 50px;
+    display: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 50px;
+    background-color: #ff8000;
+    text-decoration: none !important;
+    color: #fff;
+  
+  }
+  @media only screen and (max-width: 1100px) {
+    .nav{
+        font-size: 15px;
+        text-align: center;
+        height: 200px;
+        
+    }
+    .hide{
+      display: none;
+  }
+    .logoLg{
+      margin-top: 20%;
+    }
+   
+  }   
+    @media only screen and (max-width: 500px) {
+  
+        
+  
+    }
+    @media only screen and (max-width: 360px) {
+      nav {
+        width: 360px;
+        height: 100px;
+        font-size: 25px;
+        text-align: center;
+        
+    }
+      .logoLg{
+        margin-top: 70%;
+        width: 360px;
+        height: 500px;
+        margin-left: 5px;
+  
+      }
+      .hide{
+        display: none;
+    }
+        
+    
+      }

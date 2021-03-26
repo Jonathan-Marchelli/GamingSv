@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <title>Gaming SV - Crear cuenta</title>
-    <link rel="stylesheet" href="assets/creacuenta.css">
+    <link rel="stylesheet" href="assets/crearcuenta.css">
   </head>
   <body>
     <nav id="nav" class="nav">
@@ -13,15 +13,17 @@
     </nav>
       <div class="container">
         <div class="recover-your-account">
-            <label for="name">Tu primer nombre</label><br>
-            <input id="input"class="inputs" type="text"> <br>
+            <label for="name">Tu primer nombre y apellido</label><br>
+            <input id="input"class="inputs input1" type="text"> <br>
             <label for="username">Nombre de usuario</label><br>
-            <input   class="inputs" type="text"><br>
+            <input   class="inputs input2" type="text"><br>
             <label for="username">Contrasena</label><br>
-            <input  class="inputs" type="password" required><br>
+            <input  class="inputs input3" type="password" required><br>
 
-            <button class="btn" onclick="innermessage()">Enviar</button>
+            <button class="btn" id="btn"onclick="innermessage()">Enviar</button>
+            <button class="btn-inicia" id="inicia">Inicia sesion!</button>
         </div>
+        
       </div>  
 
       <!--jquery-->
@@ -29,21 +31,25 @@
     
     <script>
       //Insertando script para no adjuntar archivos js
-
+      let btn = document.getElementById("btn");
       let submi =  document.getElementById("message");
       let nav = document.getElementById("nav");
+      let inicia = document.getElementById("inicia");
       //Funciones principales
+
      function innermessage(){
-      if ($(".inputs").val() == '') {
+
+      if ($(".input1").val() == '' || $(".input2").val() == ''||  $(".input3").val() == '') {
         nav.style.backgroundColor = "red";
         submi.innerHTML = "OOPS... <br>Parece que hay un campo sin informacion, rellena todos para poder entrar al mejor mundo de gaming en El Salvador!";
         //Solo con fines esteticos de la consola jaja
         console.error("Failed to fetch url server responded with a 500 status:: Solo para hacerlo ver como que si hay un server y DB XD")
       }
       else {
+        btn.style.display = "none";
         nav.style.backgroundColor = "green";
         submi.innerHTML = "Bienvenido a la familia de GamingSV!<br> Inicia sesion para ver todos nuestros productos";
-
+        inicia.style.display = "block";
       }
 
 
