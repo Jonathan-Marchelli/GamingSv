@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <title>Gaming SV - Crear cuenta</title>
     <link rel="stylesheet" href="assets/master.css">
+    <script src="assets/localStorage.js"></script>
   </head>
   <body>
     <nav id="nav" class="nav">
@@ -22,7 +23,7 @@
               <input   class="inputs input2" type="text"><br>
               <label for="username">Tu contraseña </label><br>
               <input  class="inputs input3" type="password" required><br>
-              <button class="btn" id="btn"onclick="innermessage()">Iniciar sesion</button><br>
+              <button class="btn" id="btn"onclick="innermessage(), LogIn()">Iniciar sesion</button><br>
 
 
             </div>
@@ -40,7 +41,7 @@
       <!--jquery-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      //Insertando script para no adjuntar archivos js
+      //Insertando js de este doc
       let btn = document.getElementById("btn");
       let submi =  document.getElementById("message");
       let nav = document.getElementById("nav");
@@ -59,10 +60,6 @@
               }
           }
 
-     function innermessage(){ 
-      window.location.replace("http://www.w3schools.com");
-
-     }
 
     </script>
   </body>

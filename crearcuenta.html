@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
     <title>Gaming SV - Crear cuenta</title>
     <link rel="stylesheet" href="assets/crearcuenta.css">
+    <script src="assets/localStorage.js"></script>
   </head>
   <body>
     <nav id="nav" class="nav">
@@ -13,14 +14,16 @@
     </nav>
     <div class="container">
         <div class="recover-your-account">
+          <form role="form" >
             <label for="name">Tu correo electronico</label><br>
             <input id="input"class="inputs input1" type="text"> <br>
             <label for="username">Nombre de usuario</label><br>
-            <input   class="inputs input2" type="text"><br>
+            <input   class="inputs input2" id="username" type="text"><br>
             <label for="username">Contraseña</label><br>
-            <input  class="inputs input3" type="password" required><br>
+            <input  class="inputs input3" id="password" type="password" required><br>
+          </form>  
 
-            <button class="btn" id="btn"onclick="innermessage()">Enviar</button>
+            <button class="btn" id="btn"onclick="save(event), innermessage()">Enviar</button>
             <button class="btn-inicia" id="inicia">Iniciá sesión!</button>
         </div>
 
