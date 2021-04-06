@@ -1,26 +1,33 @@
 header{
-	font-family:;
+	font-family: 'Poppins';
 	margin: 4px;
 	padding: 35px;
 	border: 25px;
 	border-radius: 10px;
-	background-color: #3E5A66 ;
+	background-color:#e49d22  ;
 
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 
 }
+*{
+	color: #fff;
+}
+
+.inputs{
+	color: #000;
+}
 	
 
 .acceso-rapido{
-	background-color: #e49d22;
+	background-color: #3E5A66;
 	margin: 4px;
 	padding: 15px;
 	margin-right: 300px;
 	border-radius: 10px;
 	border: 20px;
-
+	color: #000 !important;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
