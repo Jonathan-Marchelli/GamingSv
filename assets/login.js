@@ -18,7 +18,7 @@
         if (userStorage) {
             if (userStorage.usuario == usuario && userStorage.contra == contra) {         
                 console.log("los usuarios son iguales");
-                location.href = "inicio/index.html"
+                location.href = "../index.html"
             }
             else{
                 console.log('no son iguales')
