@@ -10,21 +10,23 @@
 
     </head>
 
-    <body>
+    <body >
       <nav id="nav" class="nav">
         <h1 class="title" id="message">Creá tu cuenta y aventurate en el mejor mundo de gaming de El Salvador!.</h1>
       </nav>
       <div class="container">
         <div class="recover-your-account">
           <form id="formula" >
-            <label for="username">Nombre de usuario</label><br>
+            <label for="username">Nombre y primer apellido</label><br>
+            <input class="inputs input2" id="nombre" type="text" required><br>
+            <label >Nombre de usuario</label><br>
             <input class="inputs input2" id="user" type="text" required><br>
-            <label for="username">Tu contraseña </label><br>
+            <label >Tu contraseña </label><br>
             <input class="inputs input3" type="password" id="pass"required><br>
-
+            <button class="btn" id="btn" onclick="innermessage()">Enviar</button>
         </form>  
 
-          <button class="btn" id="btn" onclick="innermessage()">Enviar</button>
+          
         </div>
 
       </div>
@@ -38,8 +40,8 @@
 
 
 
-                  <!--lOGIN LOCALSTORAGE-->
-                  <script src="assets/locallogin.js"></script>
+            <!--Login-->
+            <script src="assets/log.js"></script>
       <!--jquery-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
