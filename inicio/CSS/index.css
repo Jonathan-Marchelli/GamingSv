@@ -116,6 +116,7 @@ aside input:hover{
 	height: auto;
 }
 
+
 .flex-container{
 
 	display: flex;
@@ -145,13 +146,17 @@ aside input:hover{
         flex-direction: column;
     }
 
+    .header{
+        width: 250%;
+        height: 100%;
+    }
     img{
         width: 50%;
         height: auto;
     }
 
     nav{
-        flex-direction: column;
+        width: 100%;
 
     }
 	.buscador{
@@ -194,6 +199,10 @@ aside input:hover{
         height: 300px;
         width: 900px;
 
+    }
+    .header{
+        width: 250%;
+        height: 100%;
     }
 
 	header{
@@ -238,6 +247,10 @@ nav{
 
     img{
         width: 70%
+    }
+    .header{
+        width: 250%;
+        height: 100%;
     }
 
     aside {
