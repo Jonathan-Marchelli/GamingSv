@@ -6,7 +6,7 @@
     background-color:#3E5A66;
   }
   .inputs{
-    color: #000;
+    color: #000  !important;
   }
   .nav{
       background-color: coral;
