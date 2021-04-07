@@ -1,58 +1,119 @@
+
+body{
+	background-color: #3E5A66;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.logo{
+    height: 250px;
+    width: 350px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #3E5A66;
+}
+.product{
+    background-color: #fff;
+    color: #000;
+}
+input{
+    border-radius: 50px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
 header{
-	font-family: 'Poppins';
+	font-family: "Poppins";
 	margin: 4px;
 	padding: 35px;
 	border: 25px;
 	border-radius: 10px;
-	background-color:#e49d22  ;
-
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
-}
-*{
-	color: #fff;
-}
-
-.inputs{
-	color: #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #e49d22
 }
 	
 
 .acceso-rapido{
-	background-color: #3E5A66;
+	background-color:#FFB600;
 	margin: 4px;
 	padding: 15px;
 	margin-right: 300px;
 	border-radius: 10px;
 	border: 20px;
-	color: #000 !important;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
+header input:hover{
+	background-color:#F3FA00 ;
+}
+
 .ajuste{
+	font-size: 22px;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	background-color: #3E5A66;
 	border-radius: 10px;
 	border: 20px;
-	padding: 15px;
 	margin: 4px;
 }
 
 
-aside{
+.buscador{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.buscador div{
+	padding: 35px;
+}
+
+.contenido{
+	margin: 80px;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.contenido div{
+	border: 3px solid black;
+	padding: 20px;
+	width: 350px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 22px;
+	margin: 20px;
+
+}
+section input:hover{
+	background-color:#F3FA00; 
+}
+
+.aside{
 	margin:4px;
 	padding: 40px;
 	border:25px;
-	background-color: #3E5A66 ;
 	border-radius: 10px;
 	
 
+}
+aside input:hover{
+	background-color:#F3FA00;
+}
+
+.img-main {
+	width: 100%;
+	height: auto;
 }
 
 .flex-container{
@@ -60,14 +121,205 @@ aside{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	background-color: #3E5A66;
+	background-color: #FFB600;
 	padding: 40px;
 	margin: 4px;
 	border: 25px;
 	border-radius: 10px;
-	font-size: 17px;
+	font-size: 22px;
+	box-sizing: border-box;
 }
 
-	
+@media screen and (max-width: 412px ){
+	.acceso-rapido{
+		margin: 15px;
+		padding: 4px;
 
+		text-align: left;
+        flex-direction: column;
+       align-content: right;
+       box-sizing: border-box;
 
+    }
+    header{
+        flex-direction: column;
+    }
+
+    img{
+        width: 50%;
+        height: auto;
+    }
+
+    nav{
+        flex-direction: column;
+
+    }
+	.buscador{
+	align-items: left;
+	align-content: left;
+
+	}
+
+    .contenido div {
+    	font-size: 10px;
+    	border: 5px;
+    	margin: 2px;
+    	padding: 2px;
+    	display: flex;
+    	flex-direction: column;
+    	align-content: left;
+    	flex-wrap: nowrap;
+    	align-items: flex-start;
+    }
+
+    section{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    footer{
+        
+        width:550px;
+
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 30px;
+    }
+    nav{
+        height: 300px;
+        width: 900px;
+
+    }
+
+	header{
+	flex-direction: column;
+	flex-wrap: nowrap;
+	}
+
+	.acceso-rapido{
+		text-align: left;
+		margin: 30px;
+	}
+
+    section{
+        flex-direction: column;
+    }
+
+    footer{
+        width: 130%;
+        text-align: center;
+    }
+
+    img{
+        width: 50%
+    }
+
+}
+
+@media screen and (max-width: 992px){
+nav{
+        flex-direction: column;
+
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    footer{
+        text-align: center;
+        width: 1000px;
+    }
+
+    img{
+        width: 70%
+    }
+
+    aside {
+        flex-direction: row;
+
+}
+}
+
+@media screen and (max-width: 1200px){
+nav{
+        flex-direction: column;
+
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img{
+        width: 80%
+    }
+
+    aside {
+        flex-direction: row;
+
+ }
+}
+
+@media screen and (max-width: 1400px){
+nav{
+        flex-direction: column;
+
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img{
+        width: 90%
+    }
+
+    aside {
+        flex-direction: row;
+
+    }
+
+}
+
+@media screen and (max-width: 1800px){
+nav{
+        flex-direction: column;
+
+    }
+
+    .contenido div{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img{
+        width: 100%
+    }
+
+    aside {
+        flex-direction: column;
+
+       }
+
+}
