@@ -149,14 +149,16 @@ aside input:hover{
 
 @media screen and (max-width: 412px ){
 	.acceso-rapido{
-		margin: 15px;
-		padding: 4px;
+        margin-left: 10px;
 
 		text-align: left;
         flex-direction: column;
        align-content: right;
        box-sizing: border-box;
 
+    }
+    aside{
+        margin-left: 100px;
     }
     header{
         flex-direction: column;
@@ -175,11 +177,7 @@ aside input:hover{
         width: 100%;
 
     }
-	.buscador{
-	align-items: left;
-	align-content: left;
 
-	}
 
     .contenido div {
     	font-size: 10px;
@@ -353,3 +351,115 @@ nav{
        }
 
 }
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    font-family: 'Nunito', sans-serif;
+    }
+    
+    
+    /*DEFAULT*/
+    a{
+    text-decoration:none;
+    }
+    li{
+    list-style:none;
+    position:relative;
+    right:20px;
+    }
+    .title{
+    font-family: 'Recursive', sans-serif;
+    }
+    .sub-title{
+    font-family: 'Raleway', sans-serif;
+    }
+
+
+    .btn1:hover{
+    background:#000;
+    }
+    
+    .cartas{
+    width:100%;
+    padding:5vh 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    }
+    
+    .cartas .carta{
+    width:20%;
+    border-radius:30px;
+    display:inline-block;
+    margin:10px;
+    border-radius:5px;
+    position:relative;
+    transition:0.5s;
+    text-align:center;
+    padding-bottom:10px;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    }
+    
+    .cartas .carta .lomas-vendido{
+    position:absolute;
+    top:-5px;
+    right:0;
+    padding:3px 5px;
+    text-align:center;
+    background:#FFB600;
+    color:#fff;
+    font-size:12px;
+    }
+    
+    .cartas section{
+    padding:30px 0;
+    background:#36cccb;
+    margin:auto;
+    text-align:center;
+    }
+    
+    .cartas .price{
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    padding:25px;
+    border-radius:50%;
+    border:2px solid #fff;
+    text-align:center;
+    height:50px;
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    top:-10vh;
+    background:#fff;
+    }
+    
+    .cartas:hover > .price_icon{
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    }
+    
+    .cartas .price b{
+    font-size:11px;
+    color:gray;
+    display:block;
+    position:absolute;
+    bottom:20px;
+    right:35%;
+    }
+    
+    
+    .cartas .carta ul li{
+    padding:5px 0;
+    }
+    
+    @media (max-width:900px){
+    .cartas{
+    width:100%;
+    display:block;
+    }
+    .cartas .carta{
+    width:90%;
+    }
+    }
