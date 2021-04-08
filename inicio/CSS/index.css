@@ -463,3 +463,16 @@ body{
     width:90%;
     }
     }
+    @media (min-width:1800px){
+        .cartas{
+        width:20%;
+        display:flex;
+        justify-content: space-between;
+        }
+        img{
+            height: 150px;
+        }
+        .cartas .carta{
+        width:90%;
+        }
+        }
