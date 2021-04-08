@@ -1,0 +1,98 @@
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+aside{
+  margin-left: 80% ;
+  position: relative;
+}
+button{
+  border-radius: 50px;
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+body{
+  font-family: "Poppins";
+  background-color: #3E5A66 ;
+  color: #fff;
+  align-items: center;
+}
+.card{
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 30px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  border-color: #000;
+  margin: 30px auto;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	background-color: #e49d22 !important;
+    border: 25px;
+	border-radius: 10px;
+	background-color: #3E5A66 ;
+
+}
+
+.nav{
+  border-radius: 50px;
+  background-color: #e49d22;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+}
+.container{
+  text-align: center;
+}
+.titulo-producto {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.imagen {
+  height: 300px;
+  width: 100%;
+}
+
+.detalles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 15px;
+}
+
+.detalles > .precio {
+  margin: 0;
+}
+
+@media screen and (max-width: 370px){
+
+  .card{
+    width: 250px;
+
+  }
+	
+	}
+
+
+
+  @media screen and (max-width: 730px){
+
+    aside{
+      margin-left: 15% ;
+    }
+
+  }
