@@ -139,12 +139,17 @@ aside input:hover{
 	flex-direction: row;
 	justify-content: space-around;
 	background-color: #FFB600;
+    color: #FFFFFF;
 	padding: 40px;
 	margin: 4px;
 	border: 25px;
 	border-radius: 10px;
 	font-size: 22px;
 	box-sizing: border-box;
+    -webkit-transition: all 2s linear 0s;
+    -moz-transition: all 2s linear 0s;
+    -ms-transition: all 2s linear 0s;
+    -o-transition: all 2s linear 0s;
 }
 
 @media screen and (max-width: 412px ){
