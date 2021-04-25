@@ -50,7 +50,12 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: #e49d22
+	background-color: #e49d22;
+    -webkit-transition: all 2s linear 0s;
+    -moz-transition: all 2s linear 0s;
+    -ms-transition: all 2s linear 0s;
+    -o-transition: all 2s linear 0s
+    -webkit-transform: translateX(100px);
 }
 	
 
