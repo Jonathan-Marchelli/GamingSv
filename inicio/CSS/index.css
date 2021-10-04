@@ -124,7 +124,20 @@ section input:hover{
 	padding: 40px;
 	border:25px;
 	border-radius: 10px;
-	
+	 -webkit-transform: translateX(400px) translateY(0px);
+  -moz-transform: translateX(400px) translateY(0px);
+  -o-transform: translateX(400px) translateY(0px);
+  -ms-transform: translateX(400px) translateY(0px);
+}
+
+.aside{
+  -webkit-transition: transform 2s ease-in-out 100ms;
+  -moz-transition: transform 2s ease-in-out 100ms;
+   -o-transition: transform 2s ease-in-out 100ms;
+  -ms-transition: transform 2s ease-in-out 100ms;
+
+}
+
 
 }
 aside input:hover{
